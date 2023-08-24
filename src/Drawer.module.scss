@@ -1,0 +1,1593 @@
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+.containerTitle {
+  position: relative;
+  max-width: 1950px;
+  margin: 0 auto;
+  .infoSale {
+    position: absolute;
+    top: -13px;
+    left: 640px;
+    width: 355px;
+    height: 52px;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #fff;
+    span {
+      padding-right: 8px;
+      padding-left: 8px;
+      border: 1px solid #ffa900;
+      background: #ffa900;
+      border-radius: 8px;
+      color: red;
+    }
+  }
+  .buttonSale {
+    cursor: pointer;
+    position: absolute;
+    width: 189px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    top: -5px;
+    left: 1030px;
+    border: 1px solid #ffffff;
+    border-radius: 31px;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #ffffff;
+  }
+}
+
+.Header {
+  z-index: 20;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  top: 100px;
+  margin: 0 auto;
+  width: 1291px;
+}
+
+.HeaderСontinued {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  top: 100px;
+  margin: 0 auto;
+  width: 1291px;
+}
+
+.catalog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  width: 132px;
+  height: 48px;
+  background: #ff0000;
+  p {
+    color: #fff;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    background: #ff0000;
+    border: #ff0000;
+    margin-left: 8px;
+  }
+  > div {
+    cursor: pointer;
+    > div {
+      margin-bottom: 2px;
+      width: 18px;
+      height: 2px;
+      background-color: #ffffff;
+    }
+  }
+}
+
+.input > input {
+  background: #ffffff;
+  background-image: url("../public/img/search.png");
+  background-position: 95% 45%;
+  background-repeat: no-repeat;
+  border: 1px solid #e1e1e1;
+  border-radius: 16px;
+  width: 317px;
+  height: 48px;
+  padding-left: 15px;
+}
+
+.address {
+  display: flex;
+  width: 295px;
+  .label {
+    position: relative;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+    width: 65px;
+    height: 48px;
+    background: rgba(255, 169, 0, 0.7);
+    border-radius: 16px 0px 0px 16px;
+    img {
+      position: absolute;
+      left: 25px;
+      top: 9px;
+    }
+    p {
+      position: absolute;
+      left: 14px;
+      top: 8px;
+    }
+  }
+  .delivery {
+    width: 230px;
+    height: 48px;
+    background: #ffa900;
+    border-radius: 0px 16px 16px 0px;
+    p:first-child {
+      display: block;
+      position: relative;
+      top: -6px;
+      left: 15px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      color: #ffffff;
+    }
+    p:last-child {
+      display: block;
+      position: relative;
+      top: -27px;
+      left: 15px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      color: #ffffff;
+    }
+  }
+}
+
+.basket {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 48px;
+  background: #ff0000;
+  border-radius: 16px;
+  img {
+    width: 26px;
+    height: 22px;
+    margin-right: 10px;
+  }
+  p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+  }
+}
+
+.Categories {
+  display: flex;
+  width: 700px;
+  position: relative;
+  top: 18px;
+  > div {
+    padding: 0 15px;
+    margin-right: 14px;
+    display: flex;
+    background-color: #fff8eb;
+    border: 1px solid rgba(255, 169, 0, 0.45);
+    border-radius: 16px;
+  }
+}
+
+.containerSlider {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1291px;
+  position: relative;
+  top: 170px;
+  img {
+    width: 962px;
+    height: 460px;
+    border-radius: 26px;
+  }
+}
+
+.slider {
+  position: relative;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 265px;
+}
+
+.image {
+  width: 802px;
+  height: 430px;
+  border-radius: 10px;
+}
+
+.leftArrow {
+  position: absolute;
+  top: 48%;
+  left: 0;
+  font-size: 3rem;
+  color: #dcdcdc;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.rightArrow {
+  position: absolute;
+  top: 48%;
+  right: 0;
+  font-size: 3rem;
+  color: #dcdcdc;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slideActive {
+  opacity: 1;
+  transition-duration: 0.5s;
+  transform: scale(1.08);
+}
+
+.headerButtom {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 50px;
+  margin-bottom: 25px;
+}
+
+.slider {
+  position: relative;
+  left: -10px;
+  top: 35px;
+}
+
+.blockImg {
+  position: relative;
+  top: -12px;
+  left: 60px;
+  cursor: pointer;
+}
+
+.getsale {
+  position: relative;
+  top: 25px;
+}
+
+.DiscountGroup {
+  width: 1291px;
+  margin: 0 auto;
+}
+
+.DiscountGroupBlock {
+  display: flex;
+}
+
+.DiscountList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid lightgray;
+  border-radius: 6%;
+  margin-right: 29px;
+  padding-left: 15px;
+  padding-right: 10px;
+}
+
+.imageDiscount {
+  height: 200px;
+}
+
+.switchLeft {
+  width: 30px;
+  height: 30px;
+}
+
+.switchRight {
+  width: 30px;
+  height: 30px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lookSale {
+  display: flex;
+  align-items: center;
+  a {
+    margin-left: 25px;
+    border: 2px solid rgba(255, 169, 0, 0.7);
+    border-radius: 12px;
+    width: 150px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff8eb;
+  }
+}
+
+.nameDiscount {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.nameDicrtiption {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000000;
+}
+
+.discriptionDiscount {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #434343;
+}
+
+.priceDiscount {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000000;
+}
+
+.infoDiscount {
+  display: flex;
+  justify-content: space-between;
+}
+
+.basketDiscount {
+  cursor: pointer;
+  width: 110px;
+  height: 42px;
+  border: 1px solid #ff0000;
+  border-radius: 12px;
+  color: #ff0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.nameList {
+  cursor: pointer;
+  width: 1291px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 100px;
+  p {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 25px;
+    color: #da9000;
+  }
+  div {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff8eb;
+    border: 1px solid #ffe7b9;
+    border-radius: 16px;
+    width: 210px;
+    height: 46px;
+    img {
+      margin-left: 15px;
+      width: 7px;
+      height: 11px;
+    }
+  }
+}
+
+.Supermarket {
+  width: 1291px;
+  position: relative;
+  top: 120px;
+  left: 4px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 70px;
+
+  div {
+    margin-bottom: 15px;
+    width: 304px;
+    height: 304px;
+    background: #f7ffe6;
+    border: 1px solid #cce0a0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+
+    p {
+      position: absolute;
+      font-family: "Nunito";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 41px;
+      color: #383c5c;
+    }
+
+    .p2__3 {
+      position: relative;
+      top: 130px;
+      left: 50px;
+    }
+    .p2__4 {
+      position: relative;
+      top: 130px;
+    }
+    .p2__5 {
+      position: relative;
+      top: 105px;
+      left: 30px;
+    }
+    .p2__6 {
+      position: relative;
+      top: 90px;
+    }
+    .p2__7 {
+      position: relative;
+      top: 120px;
+    }
+    .p2__8 {
+      position: relative;
+      top: 120px;
+    }
+  }
+  .p1 {
+    top: 30px;
+    width: 200px;
+  }
+  .p2 {
+    width: 200px;
+  }
+  .p3 {
+    width: 160px;
+  }
+  .p4 {
+    width: 160px;
+  }
+  .p5 {
+    width: 120px;
+  }
+  .p6 {
+    width: 120px;
+  }
+  .p7 {
+    width: 200px;
+  }
+  .p8 {
+    width: 160px;
+  }
+}
+
+.COOKING {
+  width: 1291px;
+  position: relative;
+  top: 120px;
+  left: 4px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 70px;
+  div {
+    margin-bottom: 15px;
+    width: 304px;
+    height: 304px;
+    background: #fff8eb;
+    border: 1px solid #ffe7b9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+  }
+  p {
+    position: relative;
+    z-index: 22;
+    left: 100px;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px;
+    color: #774631;
+  }
+
+  .p2__1 {
+    position: relative;
+    top: 100px;
+    left: -25px;
+  }
+  .p2__2 {
+    position: relative;
+    top: 90px;
+    left: -25px;
+  }
+  .p2__3 {
+    position: relative;
+    top: 90px;
+    left: -25px;
+  }
+  .p2__4 {
+    position: relative;
+    top: 90px;
+    left: -45px;
+  }
+  .p2__5 {
+    position: relative;
+    top: 90px;
+    left: -32px;
+  }
+  .p2__6 {
+    position: relative;
+    top: 90px;
+    left: -12px;
+  }
+  .p2__7 {
+    position: relative;
+    top: 90px;
+    left: -8px;
+  }
+  .p2__8 {
+    position: relative;
+    top: 55px;
+    left: -18px;
+  }
+}
+
+.FRESH {
+  width: 1291px;
+  position: relative;
+  top: 120px;
+  left: 4px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 70px;
+  div {
+    position: relative;
+    margin-bottom: 15px;
+    width: 304px;
+    height: 304px;
+    background: #ebedff;
+    border: 1px solid #ebedff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+  }
+  div:nth-child(6) {
+    position: relative;
+    left: -655px;
+  }
+  p {
+    position: relative;
+    z-index: 22;
+    left: 140px;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px;
+    color: #774631;
+  }
+  .p2__1 {
+    position: relative;
+    right: 50px;
+    top: 140px;
+  }
+  .p2__2 {
+    position: relative;
+    right: 50px;
+    top: 110px;
+  }
+  .p2__3 {
+    position: relative;
+    right: 50px;
+    top: 60px;
+  }
+  .p2__4 {
+    position: relative;
+    right: 70px;
+    top: 130px;
+  }
+  .p2__5 {
+    position: relative;
+    right: 100px;
+    top: 70px;
+  }
+  .p2__6 {
+    position: relative;
+    right: 0px;
+    top: 70px;
+  }
+}
+
+.another {
+  width: 1291px;
+  position: relative;
+  top: 120px;
+  left: 4px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 70px;
+  div {
+    position: relative;
+    margin-bottom: 15px;
+    width: 304px;
+    height: 304px;
+    background: #ebfdff;
+    border: 1px solid #a3d0d6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+  }
+  div:nth-child(6) {
+    position: relative;
+    left: -655px;
+  }
+  p {
+    position: relative;
+    z-index: 22;
+    left: 75px;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px;
+    color: #774631;
+  }
+  .p2__1 {
+    position: relative;
+    right: 20px;
+    top: 140px;
+  }
+  .p2__2 {
+    position: relative;
+    right: 50px;
+    top: 115px;
+  }
+  .p2__3 {
+    position: relative;
+    right: 50px;
+    top: 65px;
+  }
+  .p2__4 {
+    position: relative;
+    right: -20px;
+    top: 130px;
+  }
+}
+
+.sales {
+  width: 1291px;
+  position: relative;
+  top: 120px;
+  left: 4px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 70px;
+  div {
+    width: 310px;
+    height: 450px;
+  }
+  div:nth-child(1) {
+    background: #cd5a7e;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  div:nth-child(2) {
+    background: #ff594d;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  div:nth-child(3) {
+    background: #ffa68a;
+    border-radius: 30px;
+  }
+  div:nth-child(4) {
+    background: #ffc425;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  .p2__1 {
+    position: relative;
+    left: 5px;
+    top: 45px;
+  }
+  .p2__2 {
+    position: relative;
+    left: 10px;
+    top: 10px;
+  }
+  .p2__3 {
+    position: relative;
+    top: -10px;
+  }
+  .p2__4 {
+    position: relative;
+    top: 70px;
+  }
+  .p1 {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 35px;
+    color: #ffffff;
+    width: 250px;
+    position: relative;
+    left: 25px;
+  }
+  .p2 {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 35px;
+    color: #ffffff;
+    position: relative;
+    left: 45px;
+    width: 200px;
+  }
+  .p3 {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 35px;
+    color: #ffffff;
+    width: 290px;
+    position: relative;
+    left: 40px;
+  }
+  .p4 {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 35px;
+    color: #ffffff;
+    width: 250px;
+    position: relative;
+    left: 40px;
+  }
+}
+
+.SHPandPAY {
+  width: 1291px;
+  margin: 0 auto;
+  margin-top: 250px;
+  .delivery_zones span {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: #ff0000;
+  }
+  .delivery_zones p {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+    width: 586px;
+  }
+  .time span {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: #ff0000;
+  }
+  .time p {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+    width: 586px;
+  }
+  .price span {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: #ff0000;
+  }
+  .price p {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+    width: 586px;
+  }
+  .Payment span {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: #ff0000;
+  }
+  .Payment p {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+    width: 586px;
+  }
+}
+
+.Delivery_card span {
+  margin-left: 125px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ff0000;
+}
+
+.services {
+  display: flex;
+}
+
+.maps {
+  border: 1px solid wheat;
+  position: relative;
+  top: 30px;
+  left: 115px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(
+    68.58% 1403.4% at 73.62% -94.51%,
+    #ff1f00 0%,
+    #ff7715 100%
+  );
+  border-radius: 44px;
+  width: 1291px;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  .fld {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20px;
+    p {
+      font-family: "Nunito";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 38px;
+      line-height: 52px;
+      color: #ffffff;
+    }
+    .button {
+      position: relative;
+      left: 80px;
+      padding: 15px;
+      border: 2px solid white;
+      border-radius: 30px;
+      font-family: "Nunito";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 30px;
+      color: #ffffff;
+      cursor: pointer;
+    }
+  }
+  .fristOrder {
+    display: flex;
+    p {
+      font-family: "Nunito";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 30px;
+      color: #ffffff;
+    }
+    p:nth-child(1) {
+      position: relative;
+      left: 130px;
+      bottom: 30px;
+    }
+    p:nth-child(2) {
+      position: relative;
+      left: 500px;
+      bottom: 30px;
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: 154px;
+  background: #d90000;
+  padding-top: 20px;
+  padding-bottom: -400px;
+  min-width: 1920px;
+  max-width: 2250px;
+  .linksOne a {
+    display: block;
+    position: relative;
+    right: 150px;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 154%;
+    color: #ffffff;
+  }
+  .linksTwo a {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    right: 100px;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 154%;
+    color: #ffffff;
+  }
+  .linksThree a {
+    cursor: pointer;
+    display: block;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 154%;
+    color: #ffffff;
+  }
+  .linksThree .number {
+    cursor: pointer;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #ffffff;
+  }
+  .linksThree img {
+    position: relative;
+    right: 10px;
+    top: 2px;
+  }
+  .linksThree .a1 {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 15px;
+    position: relative;
+    left: 20px;
+    top: 5px;
+  }
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 130px;
+  a {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+  }
+  input {
+    width: 300px;
+    height: 50px;
+    border-radius: 20px;
+    border: 1px solid white;
+    position: relative;
+    top: 20px;
+  }
+}
+.subscribe a {
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+// все, что было ранее - первая страница сайта
+// код ниже отвечает за католог
+
+.menuCatalog {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: -197px;
+  color: #fff;
+  background: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+  width: 688px;
+  transition-duration: 0.5s ease;
+  .menu {
+    width: 308px;
+    border-right: 3px solid #e0e0e0;
+    padding-right: 10px;
+
+    li {
+      margin: 10px;
+      display: flex;
+      justify-content: space-between;
+      font-family: "Nunito";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 27px;
+      color: #0a0a0a;
+      list-style: none;
+      position: relative;
+      left: -15px;
+      right: 25px;
+      img {
+        width: 7px;
+        height: 11px;
+        position: relative;
+        top: 7px;
+      }
+    }
+  }
+}
+.catalog:hover {
+  transition-duration: 0.1s;
+  transform: scale(1.06);
+  cursor: pointer;
+  .menuCatalog {
+    display: block;
+    li:hover {
+      color: red;
+      .arrowbottom {
+        background-color: red;
+      }
+      .arrowtop {
+        background-color: red;
+      }
+    }
+  }
+}
+
+.arrowcreate {
+  .arrowbottom {
+    transform: rotate(135deg);
+    background: #000000;
+    width: 2px;
+    height: 9px;
+    position: relative;
+    top: 2px;
+  }
+  .arrowtop {
+    transform: rotate(45deg);
+    background: #000000;
+    width: 2px;
+    height: 9px;
+    position: relative;
+    bottom: 2px;
+  }
+}
+.menu li:hover .salesOpen {
+  display: block;
+}
+
+.menu .salesOpen {
+  display: none;
+  position: absolute;
+  top: -40%;
+  left: 100%;
+  padding-left: 70px;
+}
+
+.popularOpen {
+  display: none;
+}
+
+.menu li:hover .popularOpen {
+  display: block;
+  position: absolute;
+  left: 86%;
+  top: -170%;
+  padding-left: 110px;
+}
+
+.supermarktOpen {
+  display: none;
+  overflow: auto;
+}
+
+.menu li:hover .supermarktOpen {
+  display: block;
+  position: absolute;
+  left: 86%;
+  top: -300%;
+  padding-left: 110px;
+  height: 250px;
+  width: 200px;
+  padding-right: 80px;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background: #d4d4d4;
+}
+::-webkit-scrollbar-thumb {
+  background: #939393;
+  border-radius: 8px;
+  border: 0.5px solid #d4d4d4;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7c7c7c;
+}
+
+.cookingOpen {
+  display: none;
+}
+li:hover .cookingOpen {
+  display: block;
+  position: absolute;
+  left: 85%;
+  top: -440%;
+  padding-left: 110px;
+  height: 250px;
+  width: 200px;
+  padding-right: 80px;
+}
+
+a {
+  text-decoration: none;
+}
+
+// вторая страница сайта
+
+.container {
+  width: 1291px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 200px;
+}
+
+.categorypopular {
+  position: relative;
+  width: 241px;
+  height: 33px;
+  padding: 5px;
+  background: #fff8eb;
+  border: 1px solid rgba(255, 169, 0, 0.45);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    left: -10px;
+  }
+  .arrowcreate {
+    position: relative;
+    left: 20px;
+  }
+}
+
+.categorySearch .stels {
+  display: none;
+}
+
+.categorySearch {
+  .categories {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 56px;
+    margin-left: 35px;
+    padding-top: 45px;
+    cursor: pointer;
+    width: 200px;
+
+    a {
+      top: -35px;
+      z-index: 12;
+      background: #fff8eb;
+      border: 1.5px solid rgba(255, 169, 0, 0.45);
+      border-radius: 8px;
+      width: 200px;
+      text-align: center;
+      position: relative;
+      left: -7px;
+      margin-bottom: 1px;
+    }
+    a:hover {
+      color: red;
+    }
+  }
+}
+
+.mainList {
+  position: relative;
+  width: 1291px;
+  margin: 0 auto;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  div {
+    margin-bottom: 15px;
+  }
+  color: #000000;
+  input:checked {
+    background: #ff1f00;
+  }
+}
+
+.yes {
+  border: 2px solid white;
+  box-shadow: 0 0 0 1px rgba(255, 169, 0, 0.35);
+  appearance: none;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 169, 0, 0.35);
+  transition: all ease-in 0.2s;
+}
+
+.yes:checked {
+  background-color: #232323;
+}
+
+.centerBlock {
+  display: flex;
+}
+// каталог слева
+.leftBlock {
+  ul {
+    li {
+      list-style: none;
+      font-family: "Nunito";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 27px;
+      color: #000000;
+    }
+    li:active {
+      color: #f00;
+    }
+    li:visited {
+      color: #f00;
+    }
+  }
+  p {
+    position: relative;
+    right: 20px;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+  }
+}
+.Peculiarities {
+  width: 525px;
+}
+// список справа
+.titleBlock {
+  display: flex;
+}
+// список товаров
+.links {
+  display: relative;
+  margin-top: 30px;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  li {
+    background: #fff8eb;
+    border: 1px solid rgba(255, 169, 0, 0.45);
+    border-radius: 16px;
+    list-style: none;
+    padding: 5px 25px;
+    margin-right: 10px;
+    margin-bottom: 12px;
+    color: black;
+  }
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  left: 90px;
+  align-self: baseline;
+}
+
+.flipping {
+  display: flex;
+  margin-left: 150px;
+  margin-top: 80px;
+  p {
+    margin-left: 15px;
+  }
+}
+// сами блоки товара
+
+.item_description {
+  height: 406px;
+  width: 304px;
+  border: 1px solid #dadada;
+  border-radius: 20px;
+  margin-right: 15px;
+  padding: 10px;
+  .double {
+    display: flex;
+    justify-content: space-between;
+  }
+  .quantity {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #434343;
+  }
+  .priceLow {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: right;
+    color: #434343;
+  }
+  .name {
+    margin-top: -20px;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+    &:hover {
+      cursor: pointer;
+      color: red;
+    }
+  }
+}
+
+.rightBlock {
+  width: 1400px;
+}
+.center_h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.salad {
+  border-radius: 15px;
+}
+// пагинация
+.pagination {
+  display: flex;
+  position: relative;
+  top: -33px;
+  left: -8px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.btn_primary_Prev {
+  cursor: pointer;
+  width: 50px;
+  height: 40px;
+  border: 0;
+  border-radius: 15px;
+  background-color: #dcdcdc;
+  font-size: 20px;
+}
+
+.btn_primary_Next {
+  cursor: pointer;
+  width: 50px;
+  height: 40px;
+  border: 0;
+  border-radius: 15px;
+  background-color: #dcdcdc;
+  font-size: 20px;
+}
+// модальное окно
+.windowPanel {
+  z-index: 25;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.detalis_none {
+  display: none;
+}
+.window {
+  z-index: 26;
+  border-radius: 15px;
+  position: fixed;
+  top: 250px;
+  left: 450px;
+  width: 1350px;
+  height: 600px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .closed {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+  }
+}
+
+.doubleBlock {
+  display: flex;
+  position: relative;
+  top: 40px;
+  .leftBlock_one {
+    margin-right: 150px;
+    margin-left: 15px;
+    img {
+      border-radius: 45px;
+    }
+  }
+  .rightBlock_one {
+    width: 600px;
+    .toBasket {
+      display: flex;
+      img {
+        cursor: pointer;
+      }
+    }
+    button {
+      cursor: pointer;
+      width: 146px;
+      height: 42px;
+      background: #ff0000;
+      border: 1px solid #ff0000;
+      border-radius: 60px;
+      margin-right: 25px;
+      margin-left: 25px;
+      color: #ffffff;
+    }
+  }
+}
+// медиа-запросы
+@media (max-width: 1275px) {
+  .footer {
+    margin-top: 150px;
+  }
+}
+@media (max-width: 1220px) {
+  .footer {
+    margin-top: 300px;
+  }
+}
+@media (max-width: 832px) {
+  .footer {
+    margin-top: 400px;
+  }
+}
+@media (max-width: 802px) {
+  .footer {
+    margin-top: 600px;
+  }
+}
+
+@media (max-width: 700px) {
+  .footer {
+    margin-top: 750px;
+  }
+}
